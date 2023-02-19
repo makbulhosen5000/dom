@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <header>
+    <h1 class="text-5xl text-center mt-6">Let's get <span class="font-semibold text-violet-600">Some Mooooooooney</span>!!</h1>
+   </header>
+   <main>
+        <section class="mt-4">
+            <div class="grid grid-cols-3 gap-4 p-8 mx-auto w-9/12 text-white text-center">
+                <div class="bg-slate-500 p-10 rounded-xl">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h2 class="text-3xl">$
+                        <span id="deposit-total">00</span>
+                    </h2>
+                </div>
+                <div class="bg-green-500 p-10 rounded-xl">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h2 class="text-3xl">$
+                        <span id="withdraw-total">00</span>
+                    </h2>
+                </div>
+                <div class="bg-red-500 p-10 rounded-xl">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h2 class="text-3xl">$
+                        <span id="balance-total">5000</span>
+                    </h2>
+                </div>
+            </div>
+              
+        </section>
+        <section class="mt-4">
+            <div class="grid grid-cols-2 gap-4 p-8 mx-auto w-9/12">
+                <div class="bg-green-700 p-10 rounded-xl">
+                    <h4 class="text-xl mb-2 text-white">Please Deposit Money</h4>
+                    <input type="number" id="deposit-filed" placeholder="$ Deposit Money" class="p-2 mb-2 block w-9/12">
+                    <button id="btn-deposit" class="bg-blue-400 p-2 rounded hover:bg-lime-300 text-white">Deposit</button>
+                </div>
+                <div class="bg-yellow-700 p-10 rounded-xl">
+                    <h4 class="text-xl mb-2 text-white">Please Withdraw Money</h4>
+                    <input type="number" id="withdraw-filed" placeholder="$ withdraw money" class="p-2 mb-2 block w-9/12">
+                    <button id="btn-withdraw" class="bg-blue-400 p-2 rounded hover:bg-lime-300 text-white">Withdraw</button>
+                </div>
+            </div>
+              
+        </section>
+   </main>
+   <script src="js/deposit.js"></script>
+   <script src="js/withdraw.js"></script>
+</body>
+</html>

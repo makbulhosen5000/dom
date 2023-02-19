@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tour of Dom </title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<style>
+
+    
+</style>
+<body>
+    
+    <h1>Please add your comments</h1>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa obcaecati? Consectetur alias provident similique ducimus quos porro in rerum reprehenderit, animi dolorem ullam. Dignissimos alias minima eum eos repellat sit voluptates illum earum repellendus animi nostrum corrupti autem, laborum pariatur? Unde libero distinctio sapiente mollitia corrupti voluptatibus nihil! Repellat!</p>
+        <p>Aliquam, non illum minus repellat dignissimos ullam dolores, amet odit nisi quidem corporis atque vitae voluptatum necessitatibus? Veniam corporis nobis mollitia nihil labore animi vero iure fuga incidunt, ad possimus minima illo quam explicabo doloribus porro quia debitis minus, consectetur eos, consequatur dolor! Beatae ad vel ratione placeat dolores quibusdam.</p>
+        <p>At porro expedita animi, perferendis architecto dolorem consequuntur natus repellendus quae molestias iste excepturi perspiciatis fuga eveniet sed. Deserunt nisi amet minus earum facilis placeat dolor, fuga dignissimos quas sequi. Delectus quidem dignissimos rem sit reiciendis. Placeat quos autem officia numquam veritatis nulla! Repellendus asperiores, aliquam fugit sunt facilis recusandae!</p>
+    </div>
+    <div>
+        <textarea name="" id="new-comments" cols="60" rows="5"></textarea>
+    </div>
+    <button id="btn-post">Post</button>
+     
+     <script>
+           document.getElementById('btn-post').addEventListener('click',function(){
+             const commentBox = document.getElementById('new-comments');
+             const newComments = commentBox.value;
+             const commentContainer = document.getElementById('comment-container');
+             const p = document.createElement('p');
+             p.innerText = newComments;
+             commentContainer.appendChild(p);
+             commentBox.value = ''
+           })
+     </script>
+       
+
+    <script src="js/index.js"></script>
+</body>
+</html>

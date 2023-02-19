@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Special</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="font-extrabold text-5xl text-center my-7"><span class=" text-red-600 ">Valentine </span>Spacial</h1>
+       </header>
+       <main>
+            <section class="mx-6 flex flex-row gap-4">
+                <div class="valentine-details w-[70%] grid grid-cols-3 gap-4 shadow-2xl">
+                    <!-- first card start -->
+                    <div class="card card-compact w-full bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/rose.jpeg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <p>Name: Rose</p>
+                            <p>Price: <span id="rose-price">200</span></p>
+                            <input class="shadow-inner p-2" type="number" name="" id="rose-quantity" placeholder="Quantity">
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary" id="rose-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second card start -->
+                    <div class="card card-compact w-full bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/ornaments.webp" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <p>Name: Ornaments</p>
+                            <p>Price: <span id="ornaments-price">250</span></p>
+                            <input class="shadow-inner p-2" type="number" name="" id="ornaments-quantity" placeholder="Quantity">
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary" id="ornaments-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third card start -->
+                    <div class="card card-compact w-full bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/tedy.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <p>Name: Teddy Bear</p>
+                            <p>Price: <span id="teddy-price">300</span></p>
+                            <input class="shadow-inner p-2" type="number" name="" id="teddy-quantity" placeholder="Quantity">
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary" id="teddy-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third card start -->
+                    <div class="card card-compact w-full bg-base-100 shadow-xl text-center ">
+                        <figure><img src="images/kitkat.jpeg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <p>Name: Kitkat</p>
+                            <p>Price:<span id="chocolate-price">150</span></p>
+                            <input class="shadow-inner p-2" type="number" name="" id="chocolate-quantity" placeholder="Quantity">
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary" id="chocolate-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- forth card start -->
+                    <div class="card card-compact w-full bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/diary.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <p>Name: Diary</p>
+                            <p>Price: <span id="diary-price">350</span></p>
+                            <input class="shadow-inner p-2" type="number" name="" id="diary-quantity" placeholder="Quantity">
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary" id="diary-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fifth card start -->
+                    <div class="card card-compact w-full bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/love.jpeg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <p>Name: Love Kit</p>
+                            <p>Price: <span id="love-price">500</span></p>
+                            <input class="shadow-inner p-2" type="number" name="" id="love-quantity" placeholder="Quantity">
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary" id="love-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="valentine-badget w-[30%]  shadow-2xl">
+                    <div class="card card-compact w-full bg-base-100 shadow-xl text-center">
+                        <div class="card-body">
+                            <p> Rose: <span id="rose-price-total">00</span> </p>
+                            <hr>
+                            <p> Ornaments: <span id="ornaments-price-total">00</span></p>
+                            <hr>
+                            <p> Teddy Bear: <span id="teddy-price-total">00</span></p>
+                            <hr>
+                            <p> Chocolate: <span id="chocolate-price-total">00</span></p>
+                            <hr>
+                            <p> Diary: <span id="diary-price-total">00</span></p>
+                            <hr>
+                            <p> Love Kit: <span id="love-price-total">00</span></p>
+                            <hr>
+                            <p class="font-bold"> Use Promo Code For 10% Discount </p>
+                            <input class="shadow-inner p-2" type="text" name="" id="promo-code-field" placeholder="100">
+                            <button class="btn btn-primary" id="promo-code-btn">Apply Now</button>
+                            <h1>All Cost: <span id="total-price">00</span> </h1>
+                        </div>
+                    </div>
+                </div>
+                  
+            </section>
+            
+       </main>
+   <script src="js/index.js"></script>
+</body>
+</html>
